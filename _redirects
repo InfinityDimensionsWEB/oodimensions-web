@@ -32,6 +32,8 @@
 /en/privacy-policy        /en/privacy-policy.html       200
 /en/cookie-policy/        /en/cookie-policy.html        200
 /en/cookie-policy         /en/cookie-policy.html        200
+/en/legal-notice/         /en/legal-notice.html         200
+/en/legal-notice          /en/legal-notice.html         200
 
 # URLs bonitas (sin .html), coinciden con los canonical
 /nosotros/                /nosotros.html                200

@@ -155,4 +155,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/politica-cookies/"/>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://oodimensions.com/aviso-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/aviso-legal/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/legal-notice/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/aviso-legal/"/>
+    <priority>0.8</priority>
+  </url>
 </urlset>
