@@ -1,0 +1,56 @@
+# Redirecciones para Netlify / Cloudflare Pages
+# URLs antiguas del WordPress -> páginas nuevas (301 = permanente, avisa a Google)
+/pre-diseno/          /desarrollo-proyectos.html   301
+/pre-diseno           /desarrollo-proyectos.html   301
+/refund_returns/      /politica-cookies.html       301
+/refund_returns       /politica-cookies.html       301
+/portfolio2/          /proyectos.html              301
+/portfolio2           /proyectos.html              301
+/portfolio/*          /proyectos.html              301
+/portfolio            /proyectos.html              301
+
+# Versión inglesa: URLs bonitas
+/en/                      /en/index.html                200
+/en                       /en/index.html                200
+/en/about/                /en/about.html                200
+/en/about                 /en/about.html                200
+/en/services/             /en/services.html             200
+/en/services              /en/services.html             200
+/en/project-development/  /en/project-development.html  200
+/en/project-development   /en/project-development.html  200
+/en/consulting-support/   /en/consulting-support.html   200
+/en/consulting-support    /en/consulting-support.html   200
+/en/innovation-development/ /en/innovation-development.html 200
+/en/innovation-development  /en/innovation-development.html 200
+/en/digital-twins/        /en/digital-twins.html        200
+/en/digital-twins         /en/digital-twins.html        200
+/en/projects/             /en/projects.html             200
+/en/projects              /en/projects.html             200
+/en/contact/              /en/contact.html              200
+/en/contact               /en/contact.html              200
+/en/privacy-policy/       /en/privacy-policy.html       200
+/en/privacy-policy        /en/privacy-policy.html       200
+/en/cookie-policy/        /en/cookie-policy.html        200
+/en/cookie-policy         /en/cookie-policy.html        200
+
+# URLs bonitas (sin .html), coinciden con los canonical
+/nosotros/                /nosotros.html                200
+/nosotros                 /nosotros.html                200
+/servicios/               /servicios.html               200
+/servicios                /servicios.html               200
+/desarrollo-proyectos/    /desarrollo-proyectos.html    200
+/desarrollo-proyectos     /desarrollo-proyectos.html    200
+/consultoria-soporte/     /consultoria-soporte.html     200
+/consultoria-soporte      /consultoria-soporte.html     200
+/innovacion-desarrollo/   /innovacion-desarrollo.html   200
+/innovacion-desarrollo    /innovacion-desarrollo.html   200
+/digital-twins/           /digital-twins.html           200
+/digital-twins            /digital-twins.html           200
+/proyectos/               /proyectos.html               200
+/proyectos                /proyectos.html               200
+/contacto/                /contacto.html                200
+/contacto                 /contacto.html                200
+/politica-privacidad/     /politica-privacidad.html     200
+/politica-privacidad      /politica-privacidad.html     200
+/politica-cookies/        /politica-cookies.html        200
+/politica-cookies         /politica-cookies.html        200

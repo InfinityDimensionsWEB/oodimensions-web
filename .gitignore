@@ -1,0 +1,14 @@
+# El HTML crudo del WordPress viejo. Se guarda como material de consulta, pero
+# NO puede publicarse: acabaría accesible en oodimensions.com/_src/ y es
+# justamente el sitio que tiene el spam de casinos inyectado.
+_src/
+
+# Notas de trabajo internas. No son páginas de la web.
+PUBLICACION.md
+DOSSIER-CONTENIDO.md
+PLAN-ZONAS.md
+
+# Basura del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
