@@ -18,10 +18,13 @@
     boton.disabled = true;
     boton.textContent = 'Enviando…';
 
-    fetch(form.action, {
+    /* Netlify recoge el formulario en cualquier ruta del propio sitio. Se
+       envia urlencoded, que es lo que espera: con multipart no lo registra.
+       `form-name` viaja dentro del FormData y es lo que le dice cual es. */
+    fetch(location.pathname, {
       method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
     }).then(function (r) {
       if (!r.ok) throw new Error('estado ' + r.status);
       form.closest('.tarjeta').innerHTML =

@@ -67,8 +67,14 @@
       <div class="partido" style="align-items:start;">
 
         <div class="tarjeta">
-          <form class="formulario formulario--2col" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST">
-            <input type="text" name="_gotcha" style="display:none">
+          <form class="formulario formulario--2col" name="contact" method="POST"
+                data-netlify="true" netlify-honeypot="_gotcha" action="/en/thanks.html">
+            <!-- Netlify identifica el formulario por este campo cuando se
+                 envia por JavaScript. Sin el, la peticion se rechaza. -->
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Trampa antispam: los robots rellenan todo, las personas no
+                 ven este campo. Netlify descarta el envio si viene lleno. -->
+            <p hidden><label>Do not fill in: <input name="_gotcha"></label></p>
             <div class="campo">
               <label for="nombre">Name*</label>
               <input type="text" id="nombre" name="nombre" required>
@@ -88,6 +94,9 @@
             <div class="campo campo--ancho">
               <label for="mensaje">Message*</label>
               <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="campo campo--ancho campo--acepto">
+              <label><input type="checkbox" name="acepto" required> I have read and accept the <a href="privacy-policy.html">privacy policy</a>.*</label>
             </div>
             <p class="formulario__aviso" id="form-aviso" role="alert"></p>
             <button class="boton boton--primario" type="submit" id="form-enviar" style="grid-column:1 / -1;">Send message</button>
