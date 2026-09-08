@@ -1,9 +1,4 @@
-/* Comportamiento de la página de contacto.
-
-   Estaba escrito dentro del HTML. Se ha sacado aquí para poder prohibir los
-   scripts en línea en la cabecera de seguridad. */
-
-/* Envío del formulario con estados: Enviando… → éxito con check animado / error claro */
+/* Página de contacto: envío del formulario con estados */
 (function () {
   'use strict';
   var form = document.querySelector('form.formulario');
@@ -18,10 +13,8 @@
     boton.disabled = true;
     boton.textContent = 'Enviando…';
 
-    /* Netlify recoge el formulario en cualquier ruta del propio sitio. Se
-       envia urlencoded, que es lo que espera: con multipart no lo registra.
-       `form-name` viaja dentro del FormData y es lo que le dice cual es. */
-    fetch(location.pathname, {
+    /* Netlify lo quiere urlencoded y a la raíz: con multipart no lo registra */
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(new FormData(form)).toString()

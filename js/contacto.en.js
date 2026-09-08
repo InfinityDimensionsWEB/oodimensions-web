@@ -1,14 +1,4 @@
-/* Comportamiento de la página de contacto, versión en inglés.
-
-   Va aparte del español porque los mensajes de estado del formulario están
-   traducidos dentro del código. Al sacar los scripts en línea a archivo se
-   unificaron por error los dos y la página inglesa mostraba textos en
-   español; de ahí que sean dos archivos.
-
-   Lo suyo sería que los textos salieran del HTML con atributos `data-`, y
-   entonces un único archivo valdría para los dos idiomas. Queda apuntado. */
-
-/* Form submission with states: Sending… → animated success check / clear error */
+/* Contact page: form submission with states */
 (function () {
   'use strict';
   var form = document.querySelector('form.formulario');
@@ -23,10 +13,8 @@
     boton.disabled = true;
     boton.textContent = 'Sending…';
 
-    /* Netlify recoge el formulario en cualquier ruta del propio sitio. Se
-       envia urlencoded, que es lo que espera: con multipart no lo registra.
-       `form-name` viaja dentro del FormData y es lo que le dice cual es. */
-    fetch(location.pathname, {
+    /* Netlify lo quiere urlencoded y a la raíz: con multipart no lo registra */
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(new FormData(form)).toString()

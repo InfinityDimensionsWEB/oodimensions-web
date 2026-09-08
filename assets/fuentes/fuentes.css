@@ -1,9 +1,5 @@
-/* Tipografías servidas desde el propio dominio.
-   Antes se pedían a fonts.googleapis.com, lo que enviaba la IP de cada
-   visitante a Google ANTES de cualquier consentimiento. En la Unión Europea
-   eso se ha considerado una infracción del RGPD (sentencia del Landgericht
-   de Múnich, enero de 2022). Alojadas aquí no sale ningún dato fuera, y
-   además cargan antes: una petición menos a otro dominio. */
+/* Tipografías propias. Pedirlas a Google Fonts manda la IP del visitante a
+   Google sin consentimiento, y además añade una petición a otro dominio. */
 
 @font-face {
   font-family: 'Jost';

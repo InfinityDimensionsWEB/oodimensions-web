@@ -226,10 +226,7 @@
   }
 })();
 
-/* — Mapa bajo consentimiento —
-   El iframe no está en el HTML: se crea solo cuando el visitante pulsa. Así la
-   página no le pide nada a Google mientras nadie lo haya autorizado, que es lo
-   que exige el RGPD para un tercero que instala cookies. */
+/* Mapa bajo consentimiento: el iframe no está en el HTML, se crea al pulsar */
 document.querySelectorAll('[data-mapa]').forEach(function (caja) {
   var boton = caja.querySelector('[data-mapa-cargar]');
   if (!boton) return;

@@ -1373,8 +1373,7 @@ main { position: relative; z-index: 2; background: var(--fondo); }
   display: block;
 }
 
-/* Casilla de consentimiento del formulario. Nunca premarcada: el consentimiento
-   tacito no vale, la persona tiene que marcarla ella. */
+/* Casilla de consentimiento: nunca premarcada, la marca la persona */
 .campo--acepto label {
   display: flex;
   align-items: flex-start;

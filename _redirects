@@ -1,4 +1,3 @@
-# Redirecciones para Netlify / Cloudflare Pages
 # URLs antiguas del WordPress -> páginas nuevas (301 = permanente, avisa a Google)
 /pre-diseno/          /desarrollo-proyectos.html   301
 /pre-diseno           /desarrollo-proyectos.html   301
@@ -57,11 +56,8 @@
 /politica-cookies/        /politica-cookies.html        200
 /politica-cookies         /politica-cookies.html        200
 
-# Cierre de rutas internas. Ninguna de estas se publica desde git, pero si algun
-# dia se despliega arrastrando la carpeta entera, `_src/` iria dentro: y `_src/`
-# es el WordPress viejo, el que tiene inyectado el spam de casinos. Servirlo
-# desde el dominio nuevo seria regalarle a Google exactamente lo que queremos
-# quitarnos de encima.
+# Rutas internas. Git ya las excluye, pero un despliegue arrastrando la carpeta
+# entera colaria _src/, que es el WordPress viejo con el spam de casinos.
 /_src/*        /404.html   404
 /.gitignore    /404.html   404
 /*.md          /404.html   404

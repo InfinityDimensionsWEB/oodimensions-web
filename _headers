@@ -1,42 +1,17 @@
-# Cabeceras de seguridad. Netlify lee este archivo sin configurar nada, igual
-# que hace con _redirects.
-#
-# La política de contenido (CSP) es la pieza importante: declara de dónde puede
-# cargar cosas la página, y el navegador bloquea todo lo demás. Es exactamente
-# la defensa que le faltaba al WordPress anterior, donde alguien consiguió
-# inyectar enlaces de casinos en el pie y en la portada.
+# Cabeceras de seguridad. Netlify lee este archivo tal cual, igual que _redirects.
 
 /*
-  # De dónde puede cargar la página. Todo lo que no esté aquí, el navegador lo
-  # bloquea. `script-src 'self'` sin 'unsafe-inline' es lo que hace que un
-  # script inyectado en el HTML no llegue a ejecutarse — por eso se sacaron
-  # antes los scripts que estaban escritos dentro de las páginas.
-  #
-  # `style-src` sí admite en línea: hay 74 atributos style= repartidos por la
-  # maqueta y quitarlos sería rehacerla. Un estilo inyectado puede afear, pero
-  # no ejecuta código.
-  #
-  # `frame-src` deja pasar Google Maps porque el mapa de contacto se carga solo
-  # si el visitante lo pide; y `form-action` limita a dónde puede enviarse un
-  # formulario, para que nadie redirija el de contacto a otro sitio.
+  # script-src sin 'unsafe-inline' es lo que impide que un script inyectado en el
+  # HTML llegue a ejecutarse; por eso no queda ninguno escrito dentro de las
+  # páginas. style-src sí lo admite: hay 74 atributos style= en la maqueta.
+  # frame-src abre solo Google Maps, que además está detrás de un botón.
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com; form-action 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
 
-  # Que nadie pueda meter la web dentro de un marco en otra página y engañar a
-  # quien pulsa creyendo que pulsa otra cosa.
   X-Frame-Options: DENY
-
-  # Que el navegador no adivine el tipo de un archivo: si el servidor dice que
-  # es una imagen, se trata como imagen aunque contenga otra cosa.
   X-Content-Type-Options: nosniff
-
-  # Al salir hacia otro dominio se envía solo el origen, no la página concreta
-  # que estaba viendo la persona.
   Referrer-Policy: strict-origin-when-cross-origin
-
-  # La web no usa cámara, micrófono ni ubicación: se deniegan explícitamente,
-  # así ni un script inyectado podría pedirlas.
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
 
-  # Un año obligando a HTTPS. Sin includeSubDomains a propósito: si algún día
-  # hay un subdominio sirviendo por HTTP, esto lo dejaría inaccesible.
+  # Sin includeSubDomains a propósito: dejaría inaccesible cualquier subdominio
+  # que algún día sirva por HTTP.
   Strict-Transport-Security: max-age=31536000

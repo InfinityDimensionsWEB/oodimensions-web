@@ -14,8 +14,6 @@
   <meta property="og:site_name" content="Infinity Dimensions">
   <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
   <link rel="icon" href="../assets/img/cropped-fav.png">
-  <!-- Tipografías propias. No se piden a Google: eso enviaba la IP de cada
-       visitante a sus servidores antes de cualquier consentimiento. -->
   <link rel="stylesheet" href="../assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/contacto/">
@@ -69,11 +67,9 @@
         <div class="tarjeta">
           <form class="formulario formulario--2col" name="contact" method="POST"
                 data-netlify="true" netlify-honeypot="_gotcha" action="/en/thanks.html">
-            <!-- Netlify identifica el formulario por este campo cuando se
-                 envia por JavaScript. Sin el, la peticion se rechaza. -->
+            <!-- lo exige Netlify Forms al enviar por JS -->
             <input type="hidden" name="form-name" value="contact">
-            <!-- Trampa antispam: los robots rellenan todo, las personas no
-                 ven este campo. Netlify descarta el envio si viene lleno. -->
+            <!-- honeypot: si viene relleno, es un bot -->
             <p hidden><label>Do not fill in: <input name="_gotcha"></label></p>
             <div class="campo">
               <label for="nombre">Name*</label>
@@ -125,11 +121,7 @@
             <h3>Careers</h3>
             <p><a href="mailto:apply@oodimensions.com">apply@oodimensions.com</a><br><a href="about.html#empleo">See open positions</a></p>
           </div>
-          <!-- Mapa que NO se carga solo.
-               El iframe de Google Maps descarga scripts y coloca cookies de
-               Google en cuanto se abre la página, ANTES de que el visitante
-               consienta nada. Aquí se muestra un aviso y el mapa solo se
-               inserta si la persona lo pide. -->
+          <!-- El iframe se inserta solo al pulsar: si no, Google recibe la visita sin permiso -->
           <div class="mapa-consentido" data-mapa
                data-src="https://www.google.com/maps?q=Calle+Apolonio+Morales+3,+28036+Madrid&output=embed"
                data-titulo="Infinity Dimensions location in Madrid">
