@@ -12,11 +12,11 @@
   <meta property="og:description" content="Cuéntanos tu proyecto de arquitectura, ingeniería o construcción. Escríbenos, llámanos o visítanos en Madrid.">
   <meta property="og:url" content="https://oodimensions.com/contacto/">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/wp-content/uploads/2024/05/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
   <link rel="icon" href="assets/img/cropped-fav.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tipografías propias. No se piden a Google: eso enviaba la IP de cada
+       visitante a sus servidores antes de cualquier consentimiento. -->
+  <link rel="stylesheet" href="assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/contacto/">
   <link rel="alternate" hreflang="en" href="https://oodimensions.com/en/contact/">
@@ -67,7 +67,6 @@
       <div class="partido" style="align-items:start;">
 
         <div class="tarjeta">
-          <!-- REVISAR: crear formulario en formspree.io y sustituir TU_ID_FORMSPREE -->
           <form class="formulario formulario--2col" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST">
             <input type="text" name="_gotcha" style="display:none">
             <div class="campo">
@@ -117,7 +116,18 @@
             <h3>Empleo</h3>
             <p><a href="mailto:apply@oodimensions.com">apply@oodimensions.com</a><br><a href="nosotros.html#empleo">Ver ofertas abiertas</a></p>
           </div>
-          <iframe src="https://www.google.com/maps?q=Calle+Apolonio+Morales+3,+28036+Madrid&output=embed" loading="lazy" style="border:0;border-radius:14px;width:100%;height:260px;" title="Ubicación de Infinity Dimensions en Madrid"></iframe>
+          <!-- Mapa que NO se carga solo.
+               El iframe de Google Maps descarga scripts y coloca cookies de
+               Google en cuanto se abre la página, ANTES de que el visitante
+               consienta nada. Aquí se muestra un aviso y el mapa solo se
+               inserta si la persona lo pide. -->
+          <div class="mapa-consentido" data-mapa
+               data-src="https://www.google.com/maps?q=Calle+Apolonio+Morales+3,+28036+Madrid&output=embed"
+               data-titulo="Ubicación de Infinity Dimensions en Madrid">
+            <p class="mapa-consentido__aviso">El mapa lo sirve Google. Al cargarlo, Google recibe tu dirección IP y puede instalar cookies en tu navegador.</p>
+            <button type="button" class="boton boton--contorno" data-mapa-cargar>Cargar el mapa</button>
+            <a class="mapa-consentido__alterna" href="https://www.google.com/maps?q=Calle+Apolonio+Morales+3,+28036+Madrid" target="_blank" rel="noopener">O abrirlo en Google Maps →</a>
+          </div>
         </div>
 
       </div>
@@ -204,42 +214,6 @@
 
 <script src="js/main.js"></script>
 <script src="js/puntos.js"></script>
-<script>
-/* Envío del formulario con estados: Enviando… → éxito con check animado / error claro */
-(function () {
-  'use strict';
-  var form = document.querySelector('form.formulario');
-  var boton = document.getElementById('form-enviar');
-  var aviso = document.getElementById('form-aviso');
-  if (!form || !boton) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    aviso.className = 'formulario__aviso';
-    boton.disabled = true;
-    boton.textContent = 'Enviando…';
-
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function (r) {
-      if (!r.ok) throw new Error('estado ' + r.status);
-      form.closest('.tarjeta').innerHTML =
-        '<div class="formulario__exito">' +
-        '<svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="25"/><path d="M15 27l7 7 15-16"/></svg>' +
-        '<h3>Mensaje enviado</h3>' +
-        '<p>Gracias por escribirnos. Te responderemos muy pronto en el email que nos has dejado.</p>' +
-        '</div>';
-    }).catch(function () {
-      boton.disabled = false;
-      boton.textContent = 'Enviar mensaje';
-      aviso.className = 'formulario__aviso error';
-      aviso.textContent = 'No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbenos directamente a info@oodimensions.com.';
-    });
-  });
-})();
-</script>
+  <script src="js/contacto.js"></script>
 </body>
 </html>

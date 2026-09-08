@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Las rutas del WordPress viejo. Aunque devuelven 404, se declaran para que los
+# rastreadores dejen de insistir en ellas cuanto antes.
+Disallow: /_src/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+Sitemap: https://oodimensions.com/sitemap.xml

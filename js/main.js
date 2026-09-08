@@ -225,3 +225,21 @@
     }, { passive: true });
   }
 })();
+
+/* — Mapa bajo consentimiento —
+   El iframe no está en el HTML: se crea solo cuando el visitante pulsa. Así la
+   página no le pide nada a Google mientras nadie lo haya autorizado, que es lo
+   que exige el RGPD para un tercero que instala cookies. */
+document.querySelectorAll('[data-mapa]').forEach(function (caja) {
+  var boton = caja.querySelector('[data-mapa-cargar]');
+  if (!boton) return;
+  boton.addEventListener('click', function () {
+    var marco = document.createElement('iframe');
+    marco.src = caja.dataset.src;
+    marco.title = caja.dataset.titulo || '';
+    marco.loading = 'lazy';
+    marco.referrerPolicy = 'no-referrer';
+    caja.classList.add('is-cargado');
+    caja.replaceChildren(marco);
+  });
+});

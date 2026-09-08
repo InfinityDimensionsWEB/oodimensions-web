@@ -54,3 +54,12 @@
 /politica-privacidad      /politica-privacidad.html     200
 /politica-cookies/        /politica-cookies.html        200
 /politica-cookies         /politica-cookies.html        200
+
+# Cierre de rutas internas. Ninguna de estas se publica desde git, pero si algun
+# dia se despliega arrastrando la carpeta entera, `_src/` iria dentro: y `_src/`
+# es el WordPress viejo, el que tiene inyectado el spam de casinos. Servirlo
+# desde el dominio nuevo seria regalarle a Google exactamente lo que queremos
+# quitarnos de encima.
+/_src/*        /404.html   404
+/.gitignore    /404.html   404
+/*.md          /404.html   404

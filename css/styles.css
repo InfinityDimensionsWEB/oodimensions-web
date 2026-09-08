@@ -1327,3 +1327,48 @@ main { position: relative; z-index: 2; background: var(--fondo); }
   .footer__inner { grid-template-columns: 1fr; gap: 36px; }
   .footer__legal { justify-content: center; text-align: center; }
 }
+
+/* — Mapa bajo consentimiento —
+   Ocupa exactamente el mismo hueco que ocupaba el iframe, para que la maqueta
+   no se mueva, pero sin pedirle nada a Google hasta que el visitante lo pida. */
+.mapa-consentido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  height: 260px;
+  padding: 24px;
+  text-align: center;
+  border: 1px dashed var(--linea);
+  border-radius: 14px;
+  background: var(--fondo-suave);
+}
+.mapa-consentido__aviso {
+  margin: 0;
+  max-width: 46ch;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gris);
+}
+.mapa-consentido__alterna {
+  font-size: 0.85rem;
+  color: var(--gris);
+  text-decoration: underline;
+}
+.mapa-consentido__alterna:hover { color: var(--azul); }
+/* una vez aceptado, el contenedor deja sitio al iframe sin adornos */
+.mapa-consentido.is-cargado {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.mapa-consentido iframe {
+  border: 0;
+  border-radius: 14px;
+  width: 100%;
+  height: 260px;
+  display: block;
+}

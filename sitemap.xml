@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oodimensions.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/nosotros/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/nosotros/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/nosotros/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/servicios/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/servicios/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/servicios/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/desarrollo-proyectos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/desarrollo-proyectos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/project-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/desarrollo-proyectos/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/project-development/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/desarrollo-proyectos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/project-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/desarrollo-proyectos/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/consultoria-soporte/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/consultoria-soporte/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/consulting-support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/consultoria-soporte/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/consulting-support/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/consultoria-soporte/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/consulting-support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/consultoria-soporte/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/innovacion-desarrollo/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/innovacion-desarrollo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/innovation-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/innovacion-desarrollo/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/innovation-development/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/innovacion-desarrollo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/innovation-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/innovacion-desarrollo/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/digital-twins/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/digital-twins/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/digital-twins/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/digital-twins/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/digital-twins/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/digital-twins/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/digital-twins/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/digital-twins/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/proyectos/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/proyectos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/proyectos/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/projects/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/proyectos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/proyectos/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/contacto/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/contacto/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/politica-privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/politica-privacidad/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/politica-privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/politica-privacidad/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/politica-cookies/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/politica-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/cookie-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/politica-cookies/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oodimensions.com/en/cookie-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oodimensions.com/politica-cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oodimensions.com/en/cookie-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oodimensions.com/politica-cookies/"/>
+    <priority>0.8</priority>
+  </url>
+</urlset>
