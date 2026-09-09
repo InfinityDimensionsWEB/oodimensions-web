@@ -29,10 +29,6 @@ necesita capacidad o una disciplina concreta.
 
 - [Inicio](https://oodimensions.com/): qué hace la empresa y para quién.
 - [Servicios](https://oodimensions.com/servicios): las cuatro líneas de trabajo.
-- [Implantación BIM en empresas](https://oodimensions.com/implantacion-bim): las
-  cinco fases de una implantación (diagnóstico, hoja de ruta, estándares, proyecto
-  piloto y autonomía), cuánto dura cada una, qué se entrega y preguntas frecuentes
-  sobre coste, formación y plan de ejecución BIM.
 - [Consultoría y Soporte](https://oodimensions.com/consultoria-soporte):
   implantación BIM, BIM Management, coordinación, clash detection, formación.
   Incluye preguntas frecuentes sobre cómo implantar BIM y cuánto se tarda.
