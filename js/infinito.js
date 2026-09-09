@@ -103,7 +103,7 @@ import * as THREE from './vendor/three.module.min.js';
   /* ================= 1. GEOMETRÍA ================= */
 
   var ESCALA = 6.2;          /* tamaño del infinito */
-  var MEDIO_ANCHO = 1.15;    /* medio ancho de la banda */
+  var MEDIO_ANCHO = 0.35;    /* medio ancho de la banda */
   var GROSOR = 0.9;          /* profundidad de la extrusión (sin contar bisel) */
   var BISEL = 0.22;          /* redondeo de los bordes (más generoso) */
   var BISEL_LADO = 0.12;     /* cuánto sobresale el bisel del contorno */
