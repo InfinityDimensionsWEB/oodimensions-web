@@ -1,0 +1,50 @@
+# Infinity Dimensions
+
+> Consultoría BIM para arquitectura, ingeniería y construcción. Empresa española
+> con sede en Madrid, fundada en 2022, con más de 105 proyectos entregados en 16
+> países. Trabaja como equipo externo o integrada en el equipo del cliente.
+
+Infinity Dimensions S.L. (CIF B09673351) — Calle de Apolonio Morales 3, 28036
+Madrid, España. Contacto: info@oodimensions.com · +34 619 524 221.
+
+## Qué hace
+
+- **Implantación BIM y BIM Management** — auditoría de la forma de trabajar
+  actual, redacción de estándares y del plan de ejecución BIM, coordinación entre
+  disciplinas, clash detection y formación de equipos en Revit.
+- **Modelado y documentación** — modelado BIM en Revit, escaneo láser y nubes de
+  puntos, levantamiento de as-builts y planos generados desde el modelo.
+- **Automatización y desarrollo** — scripts de Dynamo y complementos a medida
+  para Revit: renombrados, generación de planos en serie, control de estándares.
+- **Gemelos digitales** — réplicas digitales de activos construidos conectadas a
+  los datos de operación y mantenimiento.
+
+## Para quién
+
+Estudios de arquitectura, ingenierías, constructoras, promotoras y propiedad.
+Tanto quien empieza de cero con BIM como quien ya tiene metodología propia y
+necesita capacidad o una disciplina concreta.
+
+## Páginas
+
+- [Inicio](https://oodimensions.com/): qué hace la empresa y para quién.
+- [Servicios](https://oodimensions.com/servicios): las cuatro líneas de trabajo.
+- [Consultoría y Soporte](https://oodimensions.com/consultoria-soporte):
+  implantación BIM, BIM Management, coordinación, clash detection, formación.
+  Incluye preguntas frecuentes sobre cómo implantar BIM y cuánto se tarda.
+- [Desarrollo de Proyectos](https://oodimensions.com/desarrollo-proyectos):
+  modelado, nubes de puntos, as-builts y documentación.
+- [Innovación y Desarrollo](https://oodimensions.com/innovacion-desarrollo):
+  automatización en Revit con Dynamo y complementos propios.
+- [Digital Twins](https://oodimensions.com/digital-twins): gemelos digitales.
+- [Proyectos](https://oodimensions.com/proyectos): trabajos entregados por país
+  y tipo de activo.
+- [Sobre nosotros](https://oodimensions.com/nosotros): equipo y forma de trabajo.
+- [Contacto](https://oodimensions.com/contacto): formulario, teléfono y dirección.
+
+Versión en inglés bajo https://oodimensions.com/en/
+
+## Notas
+
+- La web no instala cookies ni usa analítica.
+- El contenido puede citarse indicando la fuente.

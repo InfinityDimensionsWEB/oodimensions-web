@@ -1245,6 +1245,13 @@ main { position: relative; z-index: 2; background: var(--fondo); }
 .prosa th, .prosa td { border: 1px solid var(--linea); padding: 10px 14px; text-align: left; }
 .prosa th { background: var(--fondo-suave); font-family: var(--f-titulos); }
 
+/* ---------- Preguntas frecuentes ---------- */
+.faq { max-width: 820px; margin: 0 auto; }
+.faq__item { border-top: 1px solid var(--linea); padding: 26px 0; }
+.faq__item:last-child { border-bottom: 1px solid var(--linea); }
+.faq__item h3 { font-size: 19px; margin-bottom: 10px; }
+.faq__item p { color: var(--gris); margin: 0; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .rejilla--4 { grid-template-columns: repeat(2, 1fr); }
