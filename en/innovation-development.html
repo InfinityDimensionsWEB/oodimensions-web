@@ -3,29 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innovation & Development — Infinity Dimensions</title>
-  <meta name="description" content="Automation, custom tools, model visualization and data integration: tailored development for the AEC sector.">
+  <title>Revit and Dynamo automation — Infinity Dimensions</title>
+  <meta name="description" content="We automate repetitive Revit work with Dynamo scripts and custom add-ins: batch renaming, sheet generation and automated checking of modelling standards.">
   <link rel="canonical" href="https://oodimensions.com/en/innovation-development">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Innovation & Development — Infinity Dimensions">
-  <meta property="og:description" content="Automation, custom tools, model visualization and data integration: tailored development for the AEC sector.">
+  <meta property="og:title" content="Revit and Dynamo automation — Infinity Dimensions">
+  <meta property="og:description" content="We automate repetitive Revit work with Dynamo scripts and custom add-ins: batch renaming, sheet generation and automated checking of modelling standards.">
   <meta property="og:url" content="https://oodimensions.com/en/innovation-development">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
   <link rel="icon" href="../assets/img/cropped-fav.png">
+  <link rel="preload" href="../assets/fuentes/jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fuentes/lato-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/innovacion-desarrollo">
   <link rel="alternate" hreflang="en" href="https://oodimensions.com/en/innovation-development">
   <link rel="alternate" hreflang="x-default" href="https://oodimensions.com/innovacion-desarrollo">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://oodimensions.com/#empresa",
+    "name": "Infinity Dimensions",
+    "url": "https://oodimensions.com/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can actually be automated in Revit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Almost anything done repeatedly the same way: renaming and numbering elements, placing families by rule, generating views and sheets in batches, exporting documentation sets, checking the model against standards. These are typically tasks of hours that become seconds, with fewer mistakes because they no longer depend on nobody getting distracted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Dynamo script and an add-in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dynamo is visual and quick to write, ideal for solving something specific on a project. An add-in is programmed and installed as another button on the Revit ribbon: it costs more to build, but anyone on the team can use it without knowing how it works. The rule of thumb: if one person will use it, Dynamo; if the whole company will, an add-in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you know whether automating something is worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By multiplying: how often it is done per month, how long it takes, and how many people do it. If that comfortably exceeds what it costs to build, it pays. Automating a task done twice a year never pays off, however tedious it is."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://oodimensions.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://oodimensions.com/en/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Innovation and Development",
+        "item": "https://oodimensions.com/en/innovation-development"
+      }
+    ]
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@OODimensions">
+  <meta name="twitter:title" content="Revit and Dynamo automation — Infinity Dimensions">
+  <meta name="twitter:description" content="We automate repetitive Revit work with Dynamo scripts and custom add-ins: batch renaming, sheet generation and automated checking of modelling standards.">
+  <meta name="twitter:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
 </head>
 <body>
 
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="index.html" aria-label="Infinity Dimensions — home">
-      <img src="../assets/img/logo-navy.png" alt="Infinity Dimensions" width="152" height="40">
+      <img loading="eager" fetchpriority="high" src="../assets/img/logo-navy.webp" alt="Infinity Dimensions" width="152" height="40">
     </a>
     <button class="hamburguesa" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -64,31 +138,35 @@
   <!-- Pilares -->
   <section class="seccion">
     <div class="contenedor">
+      <div class="cabecera-seccion revelar">
+        <h2 class="titulo-seccion">What this service covers</h2>
+        <p class="subtitulo-seccion">In-house tools that take the repetitive work out of the way.</p>
+      </div>
       <div class="rejilla rejilla--2">
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/6-1.png" alt="" width="34" height="34">
+            <img loading="eager" fetchpriority="high" src="../assets/img/6-1.png" alt="" width="34" height="34">
           </div>
           <h3>Automation</h3>
           <p>We look for patterns in your business that let us work more effectively and successfully. We automate repetitive tasks in the BIM workflow so your team can spend time on the decisions that really add value.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/7.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/7.png" alt="" width="34" height="34">
           </div>
           <h3>Tools & Scripts</h3>
           <p>Through programming, we help our clients customize the way they work. We develop tailored scripts and add-ons for Revit, Dynamo and other industry platforms.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/9.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/9.png" alt="" width="34" height="34">
           </div>
           <h3>Model Visualization</h3>
           <p>We create custom platforms so each asset can be visualized according to its needs. From the BIM model to a viewer accessible from any device, without losing detail or data.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/10.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/10.png" alt="" width="34" height="34">
           </div>
           <h3>Integration</h3>
           <p>We connect the different data sources with the BIM model to centralize all information. This way teams always work with a single, up-to-date and accessible source of truth.</p>
@@ -113,7 +191,7 @@
           <a class="boton boton--primario" href="contact.html">Let's talk about your project</a>
         </div>
         <div class="partido__visual revelar">
-          <img src="../assets/img/sdfsdf-01.png" alt="Illustration of automation and custom development connected to the BIM model" loading="lazy">
+          <img width="601" height="601" src="../assets/img/sdfsdf-01.webp" alt="Illustration of automation and custom development connected to the BIM model" loading="lazy">
         </div>
       </div>
     </div>
@@ -193,6 +271,30 @@
     </div>
   </section>
 
+  <!-- Frequently asked questions -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="cabecera-seccion centrado revelar">
+        <span class="kicker">Common questions</span>
+        <h2 class="titulo-seccion">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item revelar">
+          <h3>What can actually be automated in Revit?</h3>
+          <p>Almost anything done repeatedly the same way: renaming and numbering elements, placing families by rule, generating views and sheets in batches, exporting documentation sets, checking the model against standards. These are typically tasks of hours that become seconds, with fewer mistakes because they no longer depend on nobody getting distracted.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>What is the difference between a Dynamo script and an add-in?</h3>
+          <p>Dynamo is visual and quick to write, ideal for solving something specific on a project. An add-in is programmed and installed as another button on the Revit ribbon: it costs more to build, but anyone on the team can use it without knowing how it works. The rule of thumb: if one person will use it, Dynamo; if the whole company will, an add-in.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>How do you know whether automating something is worth it?</h3>
+          <p>By multiplying: how often it is done per month, how long it takes, and how many people do it. If that comfortably exceeds what it costs to build, it pays. Automating a task done twice a year never pays off, however tedious it is.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA final -->
   <section class="seccion--navy cta-final">
     <div class="cta-final__inner revelar">
@@ -208,7 +310,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div>
-      <img class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.png" alt="Infinity Dimensions">
+      <img loading="lazy" decoding="async" width="665" height="175" class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.webp" alt="Infinity Dimensions">
       <p>Consulting in Architecture, Engineering and Construction. We digitalize your assets so their data works for you.</p>
       <div class="footer__social">
         <a href="https://www.linkedin.com/company/infinity-dimensions-s-l" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V23H8.34V8.31z"/></svg></a>

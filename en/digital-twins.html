@@ -3,29 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Twins — Infinity Dimensions</title>
+  <title>Digital twins for built assets — Infinity Dimensions</title>
   <meta name="description" content="We create digital twins that replicate your physical assets with their data: centralized, accessible and live information throughout the building's lifecycle.">
   <link rel="canonical" href="https://oodimensions.com/en/digital-twins">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Digital Twins — Infinity Dimensions">
+  <meta property="og:title" content="Digital twins for built assets — Infinity Dimensions">
   <meta property="og:description" content="We create digital twins that replicate your physical assets with their data: centralized, accessible and live information throughout the building's lifecycle.">
   <meta property="og:url" content="https://oodimensions.com/en/digital-twins">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
   <link rel="icon" href="../assets/img/cropped-fav.png">
+  <link rel="preload" href="../assets/fuentes/jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fuentes/lato-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/digital-twins">
   <link rel="alternate" hreflang="en" href="https://oodimensions.com/en/digital-twins">
   <link rel="alternate" hreflang="x-default" href="https://oodimensions.com/digital-twins">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://oodimensions.com/#empresa",
+    "name": "Infinity Dimensions",
+    "url": "https://oodimensions.com/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a digital twin and how is it different from a BIM model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A BIM model describes what the building is. A digital twin is also connected to what happens to it: consumption, sensors, incidents, maintenance. The model is a very detailed photograph; the twin is a photograph that updates itself and that you can make operational decisions from."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is it useful for in practice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Knowing which assets you have and where they are, anticipating maintenance instead of reacting to failures, understanding where energy consumption comes from, and simulating a change before carrying it out. In a building in use, operation often costs far more than construction: that is where the investment comes back."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we need an existing BIM model first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It helps a lot, but it is not essential. If no model exists, the as-built is surveyed first, usually from a scan. If one does exist, it is cleaned up and the missing operational information is added."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://oodimensions.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Digital Twins",
+        "item": "https://oodimensions.com/en/digital-twins"
+      }
+    ]
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@OODimensions">
+  <meta name="twitter:title" content="Digital twins for built assets — Infinity Dimensions">
+  <meta name="twitter:description" content="We create digital twins that replicate your physical assets with their data: centralized, accessible and live information throughout the building's lifecycle.">
+  <meta name="twitter:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
 </head>
 <body>
 
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="index.html" aria-label="Infinity Dimensions — home">
-      <img src="../assets/img/logo-navy.png" alt="Infinity Dimensions" width="152" height="40">
+      <img loading="eager" fetchpriority="high" src="../assets/img/logo-navy.webp" alt="Infinity Dimensions" width="152" height="40">
     </a>
     <button class="hamburguesa" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -77,7 +145,7 @@
           </ul>
         </div>
         <div class="partido__visual revelar">
-          <img id="nube-edificio" src="../assets/img/gemelo-digital-02.png" alt="Digital twin of a building connected to its data sources" loading="lazy">
+          <img width="450" height="352" id="nube-edificio" src="../assets/img/gemelo-digital-02.webp" alt="Digital twin of a building connected to its data sources" loading="lazy">
         </div>
       </div>
     </div>
@@ -161,6 +229,30 @@
     </div>
   </section>
 
+  <!-- Frequently asked questions -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="cabecera-seccion centrado revelar">
+        <span class="kicker">Common questions</span>
+        <h2 class="titulo-seccion">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item revelar">
+          <h3>What is a digital twin and how is it different from a BIM model?</h3>
+          <p>A BIM model describes what the building is. A digital twin is also connected to what happens to it: consumption, sensors, incidents, maintenance. The model is a very detailed photograph; the twin is a photograph that updates itself and that you can make operational decisions from.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>What is it useful for in practice?</h3>
+          <p>Knowing which assets you have and where they are, anticipating maintenance instead of reacting to failures, understanding where energy consumption comes from, and simulating a change before carrying it out. In a building in use, operation often costs far more than construction: that is where the investment comes back.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>Do we need an existing BIM model first?</h3>
+          <p>It helps a lot, but it is not essential. If no model exists, the as-built is surveyed first, usually from a scan. If one does exist, it is cleaned up and the missing operational information is added.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA final -->
   <section class="seccion--navy cta-final">
     <div class="cta-final__inner revelar">
@@ -176,7 +268,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div>
-      <img class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.png" alt="Infinity Dimensions">
+      <img loading="lazy" decoding="async" width="665" height="175" class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.webp" alt="Infinity Dimensions">
       <p>Consulting in Architecture, Engineering and Construction. We digitalize your assets so their data works for you.</p>
       <div class="footer__social">
         <a href="https://www.linkedin.com/company/infinity-dimensions-s-l" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V23H8.34V8.31z"/></svg></a>

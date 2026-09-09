@@ -3,29 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Development — Infinity Dimensions</title>
-  <meta name="description" content="BIM modeling, point clouds, as-builts and documentation to digitalize your assets and support you from design to maintenance of your projects.">
+  <title>BIM modelling and point clouds — Infinity Dimensions</title>
+  <meta name="description" content="BIM modelling in Revit, 3D laser scanning and point clouds, as-built surveys and project documentation generated straight from the model.">
   <link rel="canonical" href="https://oodimensions.com/en/project-development">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Project Development — Infinity Dimensions">
-  <meta property="og:description" content="BIM modeling, point clouds, as-builts and documentation to digitalize your assets and support you from design to maintenance of your projects.">
+  <meta property="og:title" content="BIM modelling and point clouds — Infinity Dimensions">
+  <meta property="og:description" content="BIM modelling in Revit, 3D laser scanning and point clouds, as-built surveys and project documentation generated straight from the model.">
   <meta property="og:url" content="https://oodimensions.com/en/project-development">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
   <link rel="icon" href="../assets/img/cropped-fav.png">
+  <link rel="preload" href="../assets/fuentes/jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fuentes/lato-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/desarrollo-proyectos">
   <link rel="alternate" hreflang="en" href="https://oodimensions.com/en/project-development">
   <link rel="alternate" hreflang="x-default" href="https://oodimensions.com/desarrollo-proyectos">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://oodimensions.com/#empresa",
+    "name": "Infinity Dimensions",
+    "url": "https://oodimensions.com/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an as-built model and how does it differ from the design?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The design says how the building was meant to be built; the as-built says how it actually turned out, deviations included. It is what you need to refurbish, to maintain and to sell: any future work on that asset starts there."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a point cloud for, and how is one produced?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The building is surveyed with a 3D laser scanner or by photogrammetry, producing millions of measured points with their real position. The as-built is then modelled on top of that cloud to millimetre accuracy, instead of trusting old drawings that rarely match what is there. It is particularly useful in refurbishment and in industrial facilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What level of detail do you model to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Whatever the intended use requires, no more. Over-modelling makes the work more expensive and the file unmanageable without adding anything. That level is agreed in writing at the outset, element by element, and forms part of the brief."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you deliver drawings as well, or only the model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. Project documentation (plans, elevations, sections, schedules, quantities) is generated from the model, so it comes out coordinated by construction: change the model and the drawings change. That is half the reason for working in BIM."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://oodimensions.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://oodimensions.com/en/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Project Development",
+        "item": "https://oodimensions.com/en/project-development"
+      }
+    ]
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@OODimensions">
+  <meta name="twitter:title" content="BIM modelling and point clouds — Infinity Dimensions">
+  <meta name="twitter:description" content="BIM modelling in Revit, 3D laser scanning and point clouds, as-built surveys and project documentation generated straight from the model.">
+  <meta name="twitter:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
 </head>
 <body>
 
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="index.html" aria-label="Infinity Dimensions — home">
-      <img src="../assets/img/logo-navy.png" alt="Infinity Dimensions" width="152" height="40">
+      <img loading="eager" fetchpriority="high" src="../assets/img/logo-navy.webp" alt="Infinity Dimensions" width="152" height="40">
     </a>
     <button class="hamburguesa" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -64,31 +146,35 @@
   <!-- Servicios -->
   <section class="seccion">
     <div class="contenedor">
+      <div class="cabecera-seccion revelar">
+        <h2 class="titulo-seccion">What this service covers</h2>
+        <p class="subtitulo-seccion">From surveying the building to the final documentation.</p>
+      </div>
       <div class="rejilla rejilla--2">
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/5-1.png" alt="" width="34" height="34">
+            <img loading="eager" fetchpriority="high" src="../assets/img/5-1.png" alt="" width="34" height="34">
           </div>
           <h3>Modeling</h3>
           <p>We create 3D models of Architecture, Structures and MEP systems, equipping them with parameters and data. We work with the industry's BIM standards so that every element of the model provides useful information in later phases of the project.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/8.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/8.png" alt="" width="34" height="34">
           </div>
           <h3>Point Clouds</h3>
           <p>We build BIM models from point clouds obtained through 3D scanning. A precise starting point that reduces interpretation errors and speeds up the survey of existing buildings and assets.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/11.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/11.png" alt="" width="34" height="34">
           </div>
           <h3>As-Builts</h3>
           <p>We generate virtual replicas of physical assets so they can keep producing information throughout their service life. The model becomes the reliable reference for maintenance and future interventions.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="../assets/img/12.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="../assets/img/12.png" alt="" width="34" height="34">
           </div>
           <h3>Documentation & Management</h3>
           <p>We coordinate and assist throughout the design, execution and maintenance process of assets. We centralize technical documentation so every project stakeholder works with the same information.</p>
@@ -113,7 +199,7 @@
           <a class="boton boton--primario" href="contact.html">Let's talk about your project</a>
         </div>
         <div class="partido__visual revelar">
-          <img src="../assets/img/del-3-03.png" alt="Workflow from scan or drawing to a BIM model with data" loading="lazy">
+          <img width="601" height="601" src="../assets/img/del-3-03.webp" alt="Workflow from scan or drawing to a BIM model with data" loading="lazy">
         </div>
       </div>
     </div>
@@ -179,6 +265,34 @@
     </div>
   </section>
 
+  <!-- Frequently asked questions -->
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="cabecera-seccion centrado revelar">
+        <span class="kicker">Common questions</span>
+        <h2 class="titulo-seccion">Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item revelar">
+          <h3>What is an as-built model and how does it differ from the design?</h3>
+          <p>The design says how the building was meant to be built; the as-built says how it actually turned out, deviations included. It is what you need to refurbish, to maintain and to sell: any future work on that asset starts there.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>What is a point cloud for, and how is one produced?</h3>
+          <p>The building is surveyed with a 3D laser scanner or by photogrammetry, producing millions of measured points with their real position. The as-built is then modelled on top of that cloud to millimetre accuracy, instead of trusting old drawings that rarely match what is there. It is particularly useful in refurbishment and in industrial facilities.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>What level of detail do you model to?</h3>
+          <p>Whatever the intended use requires, no more. Over-modelling makes the work more expensive and the file unmanageable without adding anything. That level is agreed in writing at the outset, element by element, and forms part of the brief.</p>
+        </div>
+        <div class="faq__item revelar">
+          <h3>Do you deliver drawings as well, or only the model?</h3>
+          <p>Both. Project documentation (plans, elevations, sections, schedules, quantities) is generated from the model, so it comes out coordinated by construction: change the model and the drawings change. That is half the reason for working in BIM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA final -->
   <section class="seccion--navy cta-final">
     <div class="cta-final__inner revelar">
@@ -194,7 +308,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div>
-      <img class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.png" alt="Infinity Dimensions">
+      <img loading="lazy" decoding="async" width="665" height="175" class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.webp" alt="Infinity Dimensions">
       <p>Consulting in Architecture, Engineering and Construction. We digitalize your assets so their data works for you.</p>
       <div class="footer__social">
         <a href="https://www.linkedin.com/company/infinity-dimensions-s-l" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V23H8.34V8.31z"/></svg></a>

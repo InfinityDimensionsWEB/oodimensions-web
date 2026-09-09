@@ -3,29 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Infinity Dimensions</title>
-  <meta name="description" content="Discover more than 105 completed projects in 16 countries. Portfolio of residential and office projects by Infinity Dimensions.">
+  <title>BIM projects in 16 countries — Infinity Dimensions</title>
+  <meta name="description" content="More than 105 BIM projects delivered across 16 countries: residential, offices, retail, hospitality, industrial and masterplanning.">
   <link rel="canonical" href="https://oodimensions.com/en/projects">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects — Infinity Dimensions">
-  <meta property="og:description" content="Discover more than 105 completed projects in 16 countries. Portfolio of residential and office projects by Infinity Dimensions.">
+  <meta property="og:title" content="BIM projects in 16 countries — Infinity Dimensions">
+  <meta property="og:description" content="More than 105 BIM projects delivered across 16 countries: residential, offices, retail, hospitality, industrial and masterplanning.">
   <meta property="og:url" content="https://oodimensions.com/en/projects">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
   <link rel="icon" href="../assets/img/cropped-fav.png">
+  <link rel="preload" href="../assets/fuentes/jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fuentes/lato-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/proyectos">
   <link rel="alternate" hreflang="en" href="https://oodimensions.com/en/projects">
   <link rel="alternate" hreflang="x-default" href="https://oodimensions.com/proyectos">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://oodimensions.com/#empresa",
+    "name": "Infinity Dimensions",
+    "url": "https://oodimensions.com/"
+  }
+  </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@OODimensions">
+  <meta name="twitter:title" content="BIM projects in 16 countries — Infinity Dimensions">
+  <meta name="twitter:description" content="More than 105 BIM projects delivered across 16 countries: residential, offices, retail, hospitality, industrial and masterplanning.">
+  <meta name="twitter:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
 </head>
 <body>
 
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="index.html" aria-label="Infinity Dimensions — home">
-      <img src="../assets/img/logo-navy.png" alt="Infinity Dimensions" width="152" height="40">
+      <img loading="eager" fetchpriority="high" src="../assets/img/logo-navy.webp" alt="Infinity Dimensions" width="152" height="40">
     </a>
     <button class="hamburguesa" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -90,6 +106,10 @@
   <!-- Filters and projects -->
   <section class="seccion">
     <div class="contenedor">
+      <div class="cabecera-seccion revelar">
+        <h2 class="titulo-seccion">Featured projects</h2>
+        <p class="subtitulo-seccion">A selection of work delivered across different uses and countries.</p>
+      </div>
       <div class="filtros">
         <button class="filtro activo" data-filtro="todos">All</button>
         <button class="filtro" data-filtro="residencial">Residential</button>
@@ -97,7 +117,7 @@
       </div>
       <div class="rejilla rejilla--2">
         <div class="proyecto revelar" data-categoria="residencial">
-          <img src="../assets/img/Thaleias_01.png" alt="Render of the residential building in Athens, Greece" loading="lazy">
+          <img width="2209" height="1234" src="../assets/img/Thaleias_01.webp" alt="Render of the residential building in Athens, Greece" loading="lazy">
           <span class="proyecto__etiqueta">Residential</span>
           <div class="proyecto__info">
             <h3>Athens Residential</h3>
@@ -105,7 +125,7 @@
           </div>
         </div>
         <div class="proyecto revelar" data-categoria="residencial">
-          <img src="../assets/img/Dallas_02.png" alt="Render of the residential building in Dallas, United States" loading="lazy">
+          <img width="1912" height="1007" src="../assets/img/Dallas_02.webp" alt="Render of the residential building in Dallas, United States" loading="lazy">
           <span class="proyecto__etiqueta">Residential</span>
           <div class="proyecto__info">
             <h3>Dallas Residential Building</h3>
@@ -113,7 +133,7 @@
           </div>
         </div>
         <div class="proyecto revelar" data-categoria="oficinas">
-          <img src="../assets/img/Mauritius_01.png" alt="Render of the office building in Ebene, Mauritius" loading="lazy">
+          <img width="1920" height="1080" src="../assets/img/Mauritius_01.webp" alt="Render of the office building in Ebene, Mauritius" loading="lazy">
           <span class="proyecto__etiqueta">Offices</span>
           <div class="proyecto__info">
             <h3>Ebene Office Building</h3>
@@ -121,7 +141,7 @@
           </div>
         </div>
         <div class="proyecto revelar" data-categoria="residencial">
-          <img src="../assets/img/Enscape_2023-03-14-23-00-02.png" alt="Render of the residential building in Madrid, Spain" loading="lazy">
+          <img width="1920" height="1080" src="../assets/img/Enscape_2023-03-14-23-00-02.webp" alt="Render of the residential building in Madrid, Spain" loading="lazy">
           <span class="proyecto__etiqueta">Residential</span>
           <div class="proyecto__info">
             <h3>Madrid Residential Building</h3>
@@ -219,7 +239,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div>
-      <img class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.png" alt="Infinity Dimensions">
+      <img loading="lazy" decoding="async" width="665" height="175" class="footer__logo" src="../assets/img/LogoTexto_Fondo-Blanco-02.webp" alt="Infinity Dimensions">
       <p>Consulting in Architecture, Engineering and Construction. We digitalize your assets so their data works for you.</p>
       <div class="footer__social">
         <a href="https://www.linkedin.com/company/infinity-dimensions-s-l" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V23H8.34V8.31z"/></svg></a>

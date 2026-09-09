@@ -12,8 +12,10 @@
   <meta property="og:description" content="Implantamos BIM en tu empresa: estándares, BIM Management, coordinación y clash detection, auditoría de modelos y formación de equipos en Revit.">
   <meta property="og:url" content="https://oodimensions.com/consultoria-soporte">
   <meta property="og:site_name" content="Infinity Dimensions">
-  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.png">
+  <meta property="og:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
   <link rel="icon" href="assets/img/cropped-fav.png">
+  <link rel="preload" href="assets/fuentes/jost-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fuentes/lato-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/fuentes/fuentes.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="alternate" hreflang="es" href="https://oodimensions.com/consultoria-soporte">
@@ -127,13 +129,18 @@
     ]
   }
   </script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@OODimensions">
+  <meta name="twitter:title" content="Implantación BIM y BIM Management — Infinity Dimensions">
+  <meta name="twitter:description" content="Implantamos BIM en tu empresa: estándares, BIM Management, coordinación y clash detection, auditoría de modelos y formación de equipos en Revit.">
+  <meta name="twitter:image" content="https://oodimensions.com/assets/img/logo-web-azul-01.webp">
 </head>
 <body>
 
 <header class="header">
   <div class="header__inner">
     <a class="header__logo" href="index.html" aria-label="Infinity Dimensions — inicio">
-      <img src="assets/img/logo-navy.png" alt="Infinity Dimensions" width="152" height="40">
+      <img loading="eager" fetchpriority="high" src="assets/img/logo-navy.webp" alt="Infinity Dimensions" width="152" height="40">
     </a>
     <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -172,31 +179,35 @@
   <!-- Servicios -->
   <section class="seccion">
     <div class="contenedor">
+      <div class="cabecera-seccion revelar">
+        <h2 class="titulo-seccion">Qué incluye este servicio</h2>
+        <p class="subtitulo-seccion">Las piezas que componen una implantación BIM completa.</p>
+      </div>
       <div class="rejilla rejilla--3">
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="assets/img/1-1.png" alt="" width="34" height="34">
+            <img loading="eager" fetchpriority="high" src="assets/img/1-1.png" alt="" width="34" height="34">
           </div>
           <h3>Consultoría y Soporte</h3>
           <p>Proporcionamos asesoramiento a nuestros clientes para que su adopción de la tecnología BIM resulte beneficiosa desde el primer día. Analizamos el punto de partida de cada equipo y diseñamos una hoja de ruta realista y medible.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="assets/img/2-1.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="assets/img/2-1.png" alt="" width="34" height="34">
           </div>
           <h3>Implantación BIM</h3>
           <p>Ayudamos a nuestros clientes a dar el salto al BIM de forma eficiente e intuitiva. Definimos procesos, estándares y formación a medida para que la transición no frene la actividad del estudio o la constructora.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="assets/img/3-1.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="assets/img/3-1.png" alt="" width="34" height="34">
           </div>
           <h3>BIM Management</h3>
           <p>Gestión de los modelos, creación de documentación, definición de flujos de trabajo y control de calidad. Supervisamos el ciclo completo del proyecto para que la información se mantenga coherente entre disciplinas.</p>
         </div>
         <div class="tarjeta revelar">
           <div class="tarjeta__icono">
-            <img src="assets/img/4-1.png" alt="" width="34" height="34">
+            <img loading="lazy" decoding="async" src="assets/img/4-1.png" alt="" width="34" height="34">
           </div>
           <h3>Clash Detection</h3>
           <p>Coordinamos las distintas disciplinas e identificamos las potenciales interferencias antes de la construcción del activo. Detectar los conflictos en el modelo evita sobrecostes y retrasos en obra.</p>
@@ -341,7 +352,7 @@
 <footer class="footer">
   <div class="footer__inner">
     <div>
-      <img class="footer__logo" src="assets/img/LogoTexto_Fondo-Blanco-02.png" alt="Infinity Dimensions">
+      <img loading="lazy" decoding="async" width="665" height="175" class="footer__logo" src="assets/img/LogoTexto_Fondo-Blanco-02.webp" alt="Infinity Dimensions">
       <p>Consultoría en Arquitectura, Ingeniería y Construcción. Digitalizamos tus activos para que sus datos trabajen por ti.</p>
       <div class="footer__social">
         <a href="https://www.linkedin.com/company/infinity-dimensions-s-l" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.14c0-1.7-.03-3.89-2.37-3.89-2.37 0-2.73 1.85-2.73 3.77V23H8.34V8.31z"/></svg></a>
