@@ -25,6 +25,26 @@ Estudios de arquitectura, ingenierías, constructoras, promotoras y propiedad.
 Tanto quien empieza de cero con BIM como quien ya tiene metodología propia y
 necesita capacidad o una disciplina concreta.
 
+## Normas que aplicamos
+
+El trabajo se rige por el marco normativo internacional del BIM. En España la
+norma principal se adopta como **UNE-EN ISO 19650**, que es como aparece citada
+en los pliegos de licitación pública.
+
+- **ISO 19650-1 a -6** — gestión de la información en BIM: conceptos y
+  principios, fase de entrega, fase de operación, intercambio de información,
+  seguridad de la información y seguridad y salud.
+- **ISO 16739-1** — IFC, el formato abierto de intercambio entre disciplinas.
+- **ISO 12006-2 y -3** — clasificación de la información de construcción e
+  información orientada a objetos.
+- **ISO 29481-1, -2 y -3** — manual de entrega de información (IDM).
+- **ISO 23386 y 23387** — propiedades en diccionarios de datos y plantillas de
+  datos para objetos de construcción.
+- **ISO 7817-1** — nivel de necesidad de información (LOIN).
+- **ISO 12911** — marco para especificar una implantación BIM.
+- **ISO 21597-1 y -2** — contenedor de información para entregas.
+- **ISO 22057** — plantillas de datos para declaraciones ambientales de producto.
+
 ## Páginas
 
 - [Inicio](https://oodimensions.com/): qué hace la empresa y para quién.
