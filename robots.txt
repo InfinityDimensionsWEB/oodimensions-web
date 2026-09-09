@@ -1,32 +1,30 @@
 User-agent: *
 Allow: /
 
-# Las rutas del WordPress viejo. Aunque devuelven 404, se declaran para que los
-# rastreadores dejen de insistir en ellas cuanto antes.
+# Rutas del WordPress viejo. Devuelven 404, pero se declaran para que los
+# rastreadores dejen de insistir cuanto antes.
 Disallow: /_src/
 Disallow: /wp-admin/
 Disallow: /wp-content/
 Disallow: /wp-includes/
 
-# Rastreadores de IA. Se les deja pasar a proposito: queremos que nos citen
-# cuando alguien les pregunta por consultoria BIM o por implantar Revit.
+# Rastreadores de IA y de Bing, nombrados a proposito: queremos que nos citen
+# cuando alguien pregunta por consultoria BIM o por implantar Revit. Van todos
+# en un mismo grupo para que hereden los mismos Disallow que el resto; con un
+# grupo por bot, cada uno obedecia solo el suyo y se saltaba las exclusiones.
+User-agent: Bingbot
 User-agent: GPTBot
-Allow: /
 User-agent: OAI-SearchBot
-Allow: /
 User-agent: ChatGPT-User
-Allow: /
 User-agent: ClaudeBot
-Allow: /
 User-agent: Claude-SearchBot
-Allow: /
 User-agent: PerplexityBot
-Allow: /
 User-agent: Google-Extended
-Allow: /
 User-agent: Applebot-Extended
 Allow: /
-User-agent: Bingbot
-Allow: /
+Disallow: /_src/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
 
 Sitemap: https://oodimensions.com/sitemap.xml
